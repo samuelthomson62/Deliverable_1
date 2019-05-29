@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace CurrencyConverter
 {
@@ -11,6 +12,7 @@ namespace CurrencyConverter
         static void Main(string[] args)
         {
             double value1, value2, value3, adverage, largest, smallest, totalUSD, totalYen, totalKr, totalBaht;
+
 
             Console.WriteLine("Please enter USD amount 1.");
             Console.Write("$");
@@ -35,16 +37,16 @@ namespace CurrencyConverter
 
             Console.WriteLine();
 
-            Console.WriteLine("Adverage amount = $" + adverage);
-            Console.WriteLine("Smallest amount = $" + smallest);
-            Console.WriteLine("Largest amount = $" + largest);
+            Console.WriteLine("Adverage amount = " + adverage.ToString("C"));
+            Console.WriteLine("Smallest amount = " + smallest.ToString("C"));
+            Console.WriteLine("Largest amount = " + largest.ToString("C"));
 
             Console.WriteLine();
 
-            Console.WriteLine("Total value in USD = $" + totalUSD);
-            Console.WriteLine("Total in Japanaise Yen = " + totalYen + " Yen");
-            Console.WriteLine("Total in Swedish Krona = " + totalKr + " Kr");
-            Console.WriteLine("Total in Thai Baht = " + totalBaht + " Baht");
+            Console.WriteLine("US: " + totalUSD.ToString("C"));
+            Console.WriteLine("Swedish: " + totalKr.ToString("C", CultureInfo.CreateSpecificCulture("sv-SE")));
+            Console.WriteLine("Japanese: " + totalYen.ToString("C", CultureInfo.CreateSpecificCulture("ja-JP")));
+            Console.WriteLine("Thai: " + totalBaht.ToString("C", CultureInfo.CreateSpecificCulture("th-TH")));
 
             Console.ReadKey();
         }
