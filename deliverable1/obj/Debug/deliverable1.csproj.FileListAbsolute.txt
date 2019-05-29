@@ -1,0 +1,7 @@
+C:\Users\Sam\source\repos\deliverable1\deliverable1\bin\Debug\deliverable1.exe.config
+C:\Users\Sam\source\repos\deliverable1\deliverable1\bin\Debug\deliverable1.exe
+C:\Users\Sam\source\repos\deliverable1\deliverable1\bin\Debug\deliverable1.pdb
+C:\Users\Sam\source\repos\deliverable1\deliverable1\obj\Debug\deliverable1.csprojAssemblyReference.cache
+C:\Users\Sam\source\repos\deliverable1\deliverable1\obj\Debug\deliverable1.csproj.CoreCompileInputs.cache
+C:\Users\Sam\source\repos\deliverable1\deliverable1\obj\Debug\deliverable1.exe
+C:\Users\Sam\source\repos\deliverable1\deliverable1\obj\Debug\deliverable1.pdb
