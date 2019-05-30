@@ -11,6 +11,7 @@ namespace CurrencyConverter
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             double value1, value2, value3, adverage, largest, smallest, totalUSD, totalYen, totalKr, totalBaht;
 
 
@@ -43,6 +44,7 @@ namespace CurrencyConverter
 
             Console.WriteLine();
 
+            Console.WriteLine("Total amount:");
             Console.WriteLine("US: " + totalUSD.ToString("C"));
             Console.WriteLine("Swedish: " + totalKr.ToString("C", CultureInfo.CreateSpecificCulture("sv-SE")));
             Console.WriteLine("Japanese: " + totalYen.ToString("C", CultureInfo.CreateSpecificCulture("ja-JP")));
